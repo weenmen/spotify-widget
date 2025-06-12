@@ -1,0 +1,58 @@
+.nowPlayingCard {
+    width: 500px;
+    height: 160px;
+    border-radius: 22px;
+    border: 2px solid #000;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.nowPlayingImage img {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+}
+
+#nowPlayingDetails {
+    flex-grow: 1;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.nowPlayingTitle, .playlistName {
+    font-size: 26px;
+    font-weight: bold;
+    color: #000;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nowPlayingArtist, .playlistHeader {
+    font-size: 22px;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.nowPlayingTime {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #555;
+}
+
+.nowPlayingState {
+    width: 50px;
+    text-align: center;
+}
