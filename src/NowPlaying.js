@@ -7,9 +7,9 @@ const NOW_PLAYING_ENDPOINT = 'https://api.spotify.com/v1/me/player/currently-pla
 const TOKEN_ENDPOINT = 'https://accounts.spotify.com/api/token';
 
 // 🔐 Replace with your real values
-const client_id = '8a73889ef731452b8ff1e3242278a467';
-const client_secret = '21512c0d293642fbb3236e871924081b';
-const refresh_token = 'AQBE90f1WW0wwHg5vDh6ofLAr1bR0Kt0sXKjXIS3hWtIVQFsgMNuybecB7akAB2sslIlGyNVOZYHDBMTX5CU2rGpWz7AF-CLql5J-TjYidcWSLdA8OrUnCcWE4EbLhDBW94';
+const client_id = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
+const client_secret = process.env.REACT_APP_SPOTIFY_CLIENT_SECRET;
+const refresh_token = process.env.REACT_APP_SPOTIFY_REFRESH_TOKEN;
 
 export const getAccessToken = async () => {
   const basic = Buffer.from(`${client_id}:${client_secret}`).toString('base64');
